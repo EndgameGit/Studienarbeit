@@ -39,7 +39,7 @@ def processImg(img_path='clock.jpg'):
 sagemaker_session = sagemaker.Session()
 input = input("Enter path to your drawing (jpg/png): ")
 inputImg = processImg(input)
-endpoint = 'tensorflow-inference-2023-05-28-14-27-16-838' #get endpoint name from SageMaker > endpoints
+endpoint = 'tensorflow-inference-XXXXXXXXX' #get endpoint name from SageMaker > endpoints
 
 predictor=sagemaker.tensorflow.model.TensorFlowPredictor(endpoint, sagemaker_session)
 # .predict send the data to our endpoint
